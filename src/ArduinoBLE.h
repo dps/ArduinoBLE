@@ -26,4 +26,8 @@
 #include "BLETypedCharacteristics.h"
 #include "utility/btct.h"
 
+// dps
+#include "local/BLELocalCharacteristic.h"
+#include "local/BLELocalService.h"
+
 #endif

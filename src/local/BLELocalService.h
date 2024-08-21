@@ -38,6 +38,9 @@ public:
   void addCharacteristic(BLECharacteristic& characteristic);
   void clear();
 
+  // dps
+  void addCharacteristic(BLELocalCharacteristic* characteristic);
+
 protected:
   friend class ATTClass;
   friend class GATTClass;
@@ -49,7 +52,6 @@ protected:
   unsigned int characteristicCount() const;
   BLELocalCharacteristic* characteristic(unsigned int index) const;
 
-  void addCharacteristic(BLELocalCharacteristic* characteristic);
 
 private:
   uint16_t _startHandle;

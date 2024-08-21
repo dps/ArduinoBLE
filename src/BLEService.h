@@ -46,12 +46,13 @@ public:
   BLECharacteristic characteristic(const char * uuid) const;
   BLECharacteristic characteristic(const char * uuid, int index) const;
 
+  // dps
+  BLELocalService* local();
+
 protected:
   friend class GATTClass;
 
   BLEService(BLELocalService* local);
-
-  BLELocalService* local();
 
   void addCharacteristic(BLELocalCharacteristic* characteristic);
 
